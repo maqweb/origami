@@ -144,7 +144,7 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    // top: 50%;
 
     display: block;
 
@@ -237,13 +237,13 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: -10%;
 
     display: block;
 
@@ -299,7 +299,7 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 26px;
     line-height: 20px;
 
     position: absolute;
