@@ -1,0 +1,36 @@
+/*
+* header style
+*/
+
+.header {
+  margin-top: 35px;
+  .box-flex {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__item {
+    margin-right: 60px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $text;
+  }
+}
+
+.phone {
+  text-decoration: none;
+  color: $text;
+}
