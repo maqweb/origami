@@ -684,7 +684,7 @@ body {
     list-style-type: none;
     font-size: 18px; }
   .advantages__item {
-    background: url(../../../img/chekmark.svg) no-repeat 0 0;
+    background: url(../../img/chekmark.svg) no-repeat 0 0;
     padding-left: 30px;
     padding-top: 5px; }
 
@@ -822,7 +822,7 @@ body {
     line-height: 160%; }
 
 .packages__plan-list {
-  list-style-image: url(../../../img/rectangle.svg);
+  list-style-image: url(../../img/rectangle.svg);
   margin: 0 auto;
   padding: 0 0 0 14px; }
 
