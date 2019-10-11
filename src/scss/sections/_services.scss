@@ -3,7 +3,7 @@
 */
 
 .services {
-  padding: 90px 0 80px;
+  padding: 90px 0 0 0;
   background: rgba(249, 250, 247, 0.6);
   .section__title {
     margin-bottom: 39px;
@@ -23,12 +23,6 @@
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 90px;
-
-    &:nth-child(4),
-    &:nth-child(5),
-    &:nth-child(6) {
-      margin-bottom: 0;
-    }
   }
   
   &__title {

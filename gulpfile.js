@@ -19,9 +19,9 @@ function styles() {
 function scripts() {
   return gulp.src('./src/js/**/*.js')
     .pipe(concat('scripts.min.js'))
-    .pipe(uglify({
-      toplevel: true
-    }))
+    // .pipe(uglify({
+    //   // toplevel: true
+    // }))
     .pipe(gulp.dest('./build/js'))
 }
 

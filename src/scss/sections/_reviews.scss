@@ -1,3 +1,41 @@
 /*
 * reviews style
 */
+
+.reviews {
+  padding: 90px 0;
+
+  .section__title {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__pic {
+    width: 126px;
+    height: 126px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    text-align: center;
+    line-height: 160%;
+    margin-bottom: 26px;
+  }
+}
+
+#reviews__wrap {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}

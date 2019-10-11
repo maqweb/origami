@@ -704,7 +704,7 @@ body {
 * services style
 */
 .services {
-  padding: 90px 0 80px;
+  padding: 90px 0 0 0;
   background: rgba(249, 250, 247, 0.6); }
   .services .section__title {
     margin-bottom: 39px; }
@@ -726,8 +726,6 @@ body {
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 90px; }
-    .services__item:nth-child(4), .services__item:nth-child(5), .services__item:nth-child(6) {
-      margin-bottom: 0; }
   .services__title {
     font-weight: 900; }
 
@@ -832,3 +830,30 @@ body {
 /*
 * reviews style
 */
+.reviews {
+  padding: 90px 0; }
+  .reviews .section__title {
+    margin-bottom: 50px; }
+  .reviews__item {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+  .reviews__pic {
+    width: 126px;
+    height: 126px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 35px; }
+  .reviews__text {
+    text-align: center;
+    line-height: 160%;
+    margin-bottom: 26px; }
+
+#reviews__wrap {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
