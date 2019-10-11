@@ -832,11 +832,12 @@ body {
 */
 .reviews {
   padding: 90px 0; }
+  .reviews .container {
+    position: relative; }
   .reviews .section__title {
     margin-bottom: 50px; }
   .reviews__item {
-    height: 300px;
-    width: 53%;
+    height: 360px;
     text-align: center;
     margin: 0 auto; }
   .reviews__pic {
@@ -849,11 +850,23 @@ body {
     margin-bottom: 35px; }
   .reviews__text {
     text-align: center;
+    width: 53%;
+    margin: 0 auto;
     line-height: 160%;
     margin-bottom: 26px; }
 
 #reviews__wrap {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   height: 360px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
+  #reviews__wrap .slick-dots {
+    bottom: 5%; }
+  #reviews__wrap .slick-arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    cursor: pointer; }
+    #reviews__wrap .slick-arrow:first-child {
+      left: 0; }
