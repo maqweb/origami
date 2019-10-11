@@ -1,13 +1,6 @@
 /*
 * reviews style
 */
-.wrapper {
-  width: 50%;
-}
-
-#reviews__wrap {
-  display: flex;
-}
 
 .reviews {
   padding: 90px 0;
@@ -17,8 +10,10 @@
   }
 
   &__item {
-    width: 700px;
+    height: 300px;
+    width: 53%;
     text-align: center;
+    margin: 0 auto;
   }
 
   &__pic {
@@ -38,3 +33,15 @@
   }
 }
 
+// .wrapper {
+//   width: 700px;
+//   overflow: hidden;
+//   margin: 0 auto;
+// }
+
+#reviews__wrap {
+  width: 70%;
+  margin: 0 auto;
+  height: 360px;
+  overflow: hidden;
+}
