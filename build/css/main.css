@@ -570,6 +570,16 @@ body {
   text-align: center;
   margin: 0; }
 
+.btn {
+  width: 190px;
+  outline: none;
+  padding: 18px 0;
+  background: #ffebe6;
+  border-radius: 3px;
+  cursor: pointer; }
+  .btn:active {
+    color: #4f4f4f; }
+
 /*
 * header style
 */
@@ -582,7 +592,9 @@ body {
             justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
 
 .nav__list {
   display: -webkit-box;
@@ -640,15 +652,6 @@ body {
   margin-bottom: 16px;
   font-weight: 100;
   line-height: 140%; }
-
-.btn {
-  width: 190px;
-  outline: none;
-  padding: 18px 0;
-  background: #ffebe6;
-  border-radius: 3px; }
-  .btn:active {
-    color: #4f4f4f; }
 
 .slider__pic_height {
   height: 474px; }
@@ -874,3 +877,65 @@ body {
     cursor: pointer; }
     #reviews__wrap .slick-arrow:first-child {
       left: 0; }
+
+/*
+* contacts style
+*/
+.contacts {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .contacts__left {
+    width: 50%;
+    height: 465px; }
+  .contacts__bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center center; }
+  .contacts__right {
+    padding: 90px 0 50px 80px;
+    width: 50%;
+    background: rgba(249, 250, 247, 0.6); }
+  .contacts__title {
+    font-size: 22px;
+    margin-bottom: 40px; }
+  .contacts__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-bottom: 50px; }
+  .contacts__item {
+    margin-bottom: 25px;
+    font-size: 18px; }
+  .contacts__phone, .contacts__mail {
+    display: block;
+    text-decoration: none;
+    color: #4f4f4f; }
+  .contacts__soctitle {
+    font-size: 22px;
+    margin-bottom: 20px; }
+
+.soc__list {
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.soc__item {
+  margin-right: 20px; }
+
+/*
+* footer style
+*/
+.footer {
+  padding: 20px 0;
+  background: #4f4f4f; }
+
+.footer_text {
+  text-align: center;
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
+  letter-spacing: 0.05em; }
