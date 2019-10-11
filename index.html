@@ -54,7 +54,7 @@
         <div class="cost-text">
           Заполните анкету и узнайте стоимость<br> оформления Вашей свадьбы
         </div>
-        <button class="btn">Узнать стоимость</button>
+        <button class="btn call">Узнать стоимость</button>
       </div>
 
       <div class="intro__right">
@@ -150,25 +150,33 @@
       <ul class="portfolio__list">
         <li class="portfolio__item">
           <a href="#" class="portfolio__link">
-            <div class="portfolio__pic" style="background-image: url(./img/portfolio/1/1_1.jpg);"></div>
+            <div class="portfolio__wrap-pic">
+              <div class="portfolio__pic" style="background-image: url(./img/portfolio/1/1_1.jpg);"></div>
+            </div>
             <div class="portfolio__name">Роман и Светлана</div>
           </a>
         </li>
         <li class="portfolio__item">
           <a href="#" class="portfolio__link">
-            <div class="portfolio__pic" style="background-image: url(./img/portfolio/2/2_1.jpg);"></div>
+            <div class="portfolio__wrap-pic">
+              <div class="portfolio__pic" style="background-image: url(./img/portfolio/2/2_1.jpg);"></div>
+            </div>
             <div class="portfolio__name">Вадим и Елена</div>
           </a>
         </li>
         <li class="portfolio__item">
           <a href="#" class="portfolio__link">
-            <div class="portfolio__pic" style="background-image: url(./img/portfolio/3/3_1.jpg);"></div>
+            <div class="portfolio__wrap-pic">
+              <div class="portfolio__pic" style="background-image: url(./img/portfolio/3/3_1.jpg);"></div>
+            </div>
             <div class="portfolio__name">Закир и Вероника</div>
           </a>
         </li>
         <li class="portfolio__item">
           <a href="#" class="portfolio__link">
-            <div class="portfolio__pic" style="background-image: url(./img/portfolio/4/4_1.jpg);"></div>
+            <div class="portfolio__wrap-pic">
+              <div class="portfolio__pic" style="background-image: url(./img/portfolio/4/4_1.jpg);"></div>
+            </div>
             <div class="portfolio__name">Вячеслав и Мария</div>
           </a>
         </li>
@@ -200,7 +208,7 @@
           </div>
           <div class="packages__mark">* Из имеющегося декора в наличии</div>
           <div class="packages__button">
-            <button class="btn">Оставить заявку</button>
+            <button class="btn call">Оставить заявку</button>
           </div>
         </li>
 
@@ -219,7 +227,7 @@
           </div>
           <div class="packages__mark">* Из имеющегося декора в наличии</div>
           <div class="packages__button">
-            <button class="btn">Оставить заявку</button>
+            <button class="btn call">Оставить заявку</button>
           </div>
         </li>
 
@@ -237,7 +245,7 @@
           </div>
           <div class="packages__mark">* Из имеющегося декора в наличии</div>
           <div class="packages__button">
-            <button class="btn">Оставить заявку</button>
+            <button class="btn call">Оставить заявку</button>
           </div>
         </li>
 
@@ -254,7 +262,7 @@
           <div class="packages__mark">* Стоимость зависит от объема работы, выбранных цветов и материалов, сложности
             монтажных работ и другое</div>
           <div class="packages__button">
-            <button class="btn">Оставить заявку</button>
+            <button class="btn call">Оставить заявку</button>
           </div>
         </li>
 
@@ -277,7 +285,7 @@
               настоящей сказкой! Не смотря на казус со светом, все равно наша свадьба стала незабываемой благодаря вам!
               Вы - настоящие мастера своего дела! Ещё раз спасибо)</div>
             <div class="reviews__link">
-              Наташа Горобец, https://vk.com/id24914335
+              <a class="preson__link" href="https://vk.com/id24914335" target="_blank">Наташа Горобец, <span class="preson__link-soc">vk.com/id24914335</span></a>
             </div>
           </div>
 
@@ -291,7 +299,8 @@
               мастера своего
               дела! Ещё раз спасибо)</div>
             <div class="reviews__link">
-              Наташа Горобец, https://vk.com/id24914335
+              <a class="preson__link" href="https://vk.com/id24914335" target="_blank">Наташа Горобец, <span
+                  class="preson__link-soc">vk.com/id24914335</span></a>
             </div>
           </div>
 
@@ -305,7 +314,8 @@
               мастера своего
               дела! Ещё раз спасибо)</div>
             <div class="reviews__link">
-              Наташа Горобец, https://vk.com/id24914335
+              <a class="preson__link" href="https://vk.com/id24914335" target="_blank">Наташа Горобец, <span
+                  class="preson__link-soc">vk.com/id24914335</span></a>
             </div>
           </div>
 
@@ -319,7 +329,8 @@
               мастера своего
               дела! Ещё раз спасибо)</div>
             <div class="reviews__link">
-              Наташа Горобец, https://vk.com/id24914335
+              <a class="preson__link" href="https://vk.com/id24914335" target="_blank">Наташа Горобец, <span
+                  class="preson__link-soc">vk.com/id24914335</span></a>
             </div>
           </div>
 
@@ -364,6 +375,20 @@
       </ul>
     </div>
   </section>
+
+  <div id="modal_box">
+    <div id="content_modal">
+      <div id="close_modal"><img src="img/x.svg" alt=""></div>
+      <div class="form__title">Оставьте свои данные в форме ниже</div>
+      <form action="" name="order" id="form_call">
+        <input type="text" placeholder="Имя">
+        <input type="number" placeholder="Телефон">
+        <button type="submit" class="btn">Оставить заявку</button>
+      </form>
+      <div class="politic">*Нажимая на кнопку, Вы соглашаетесь на обработку своих персональных данных и соглашаетесь с <a href="" class="politic__link">политикой конфиденциальности</a></div>
+    </div>
+  </div>
+  <div id="black_fill"></div>
 
   <footer class="footer">
     <div class="footer_text">ORIGAMI 2019</div>

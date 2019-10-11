@@ -68,3 +68,15 @@
     }
   }
 }
+
+.preson__link {
+  color: $text;
+  text-decoration: none;
+  outline: none;
+
+  &-soc {
+    color: #2D9CDB;
+    text-decoration: underline;
+  }
+}
+

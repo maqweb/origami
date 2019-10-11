@@ -1,0 +1,88 @@
+/*
+* popup style
+*/
+
+#black_fill {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+#modal_box {
+  position: fixed;
+  top: 20vh;
+  left: calc(50% - 212px);
+  z-index: 55;
+  display: none;
+}
+
+#close_modal {
+  fill: #fff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#content_modal {
+  // width: 100%;
+  width: 425px;
+  background-color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.form__title {
+  font-size: 20px;
+  line-height: 24px;
+  width: 56%;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+#form_call {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  input {
+    width: 264px;
+    border: none;
+    border-bottom: 1px solid #f2f2f2;
+    outline: none;
+    margin-bottom: 40px;
+
+    &::placeholder {
+      color: #bdbdbd;
+      font-size: 14px;
+    }
+  }
+
+  .btn {
+    align-self: center;
+    margin-bottom: 44px;
+    padding: 12px 0;
+  }
+}
+
+.politic {
+  width: 90%;
+  font-size: 10px;
+  text-align: center;
+  color: #828282;
+  line-height: 15px;
+
+  &__link {
+    color: #828282;
+  }
+}

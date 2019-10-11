@@ -26,6 +26,17 @@
     display: block;
     text-decoration: none;
     color: $text;
+
+    &:hover {
+      .portfolio__pic {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__wrap-pic {
+    overflow: hidden;
+    height: 330px;
   }
 
   &__pic {
@@ -33,6 +44,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 10px;
+    transition: all .3s;
   }
 
   &__name {

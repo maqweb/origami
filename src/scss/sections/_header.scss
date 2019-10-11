@@ -20,9 +20,28 @@
 
   &__item {
     margin-right: 60px;
+    position: relative;
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      background: $text;
+      height: 1px;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      transition: width 0.3s;
+    }
+
+    &:hover {
+      &:before {
+        width: 100%;
+      }
     }
   }
 

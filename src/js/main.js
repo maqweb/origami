@@ -16,4 +16,12 @@ $(document).ready(function () {
     prevArrow: '<img src="img/vector.svg" alt="">',
   });
 
+
+  $('.call').click(function () {
+    $('#modal_box, #black_fill').show();
+  })
+
+  $('#close_modal, #black_fill').click(function () {
+    $('#modal_box, #black_fill').hide();
+  })
 });
