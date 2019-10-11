@@ -654,6 +654,7 @@ body {
   height: 474px; }
 
 #slider {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -665,6 +666,9 @@ body {
     cursor: pointer; }
     #slider .slick-arrow:first-child {
       right: 10%; }
+
+.slider__item {
+  width: 100%; }
 
 /*
 * advantages style

@@ -56,6 +56,7 @@
 }
 
 #slider {
+  width: 100%;
   display: flex;
 
   .slick-arrow {
@@ -69,4 +70,8 @@
       right: 10%;
     }
   }
+}
+
+.slider__item {
+  width: 100%;
 }
