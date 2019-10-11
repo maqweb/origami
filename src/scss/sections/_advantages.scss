@@ -1,0 +1,23 @@
+/*
+* advantages style
+*/
+
+.advantages {
+  background: rgba(249, 250, 247, 0.6);
+  padding: 90px 0;
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 18px;
+  }
+
+  &__item {
+    background: url(../../../img/chekmark.svg) no-repeat 0 0;
+    padding-left: 30px;
+    padding-top: 5px;
+  }
+}
