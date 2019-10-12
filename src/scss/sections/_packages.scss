@@ -5,6 +5,10 @@
 .packages {
   padding: 90px 0 100px;
   background: rgba(249, 250, 247, 0.6);
+  .section__title {
+    margin-bottom: 40px;
+  }
+
 
   &__list {
     list-style-type: none;
@@ -15,14 +19,15 @@
 
   &__item {
     background: #fff;
-    width: 24%;
+    width: 23%;
     height: 540px;
     padding: 40px 20px 36px;
     display: flex;
     flex-direction: column;
   }
-
+  
   &__content {
+    font-size: 14px;
     flex: 1 0 auto;
   }
 

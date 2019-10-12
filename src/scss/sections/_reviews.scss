@@ -48,13 +48,11 @@
   width: 100%;
   margin: 0 auto;
   height: 360px;
-  // overflow-y: hidden;
-  // overflow-x: visible;
   overflow: hidden;
   position: relative;
   
   .slick-dots {
-    bottom: 5%;
+    bottom: 0;
   }
 
   .slick-arrow {

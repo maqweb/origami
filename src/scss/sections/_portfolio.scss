@@ -37,13 +37,13 @@
   &__wrap-pic {
     overflow: hidden;
     height: 330px;
+    margin-bottom: 15px;
   }
 
   &__pic {
     height: 330px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 10px;
     transition: all .3s;
   }
 
