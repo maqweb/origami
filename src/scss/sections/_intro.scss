@@ -4,19 +4,52 @@
 
 .intro {
   margin-bottom: 100px;
+
+  @include tablets {
+    margin-bottom: 50px;
+  }
+
+  .container {
+    @include tablets {
+      padding: 0;
+    }
+  }
+
   .box-flex {
     justify-content: space-between;
+    @include tablets {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+    }
   }
 
   &__left {
     display: flex;
     flex-direction: column;
     align-self: center;
+
+    .btn {
+      @include tablets {
+        align-self: center;
+      }
+    }
   }
 
   &__right {
     width: 680px;
     overflow: hidden;
+
+    @include tablets {
+      width: 100%;
+    }
+  }
+}
+
+.slider__pic {
+  @include tablets {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -36,10 +69,18 @@
   margin-bottom: 16px;
   font-weight: 100;
   line-height: 140%;
+
+  @include tablets {
+    margin-bottom: 26px;
+  }
 }
 
 .slider__pic_height {
   height: 474px;
+
+  @include tablets {
+    height: 100%;
+  }
 }
 
 #slider {
@@ -55,6 +96,10 @@
 
     &:first-child {
       right: 10%;
+    }
+
+    @include tablets {
+      display: none !important;
     }
   }
 }

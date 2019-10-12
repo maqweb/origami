@@ -4,6 +4,13 @@
 
 .portfolio {
   padding: 99px 0;
+
+  .container {
+    @include tablets {
+      padding: 0;
+    }
+  }
+
   .section__title {
     margin-bottom: 39px;
   }
@@ -25,6 +32,10 @@
       .portfolio__pic {
         transform: scale(1.1);
       }
+    }
+
+    @include tablets {
+      width: 100%;
     }
   }
 

@@ -9,6 +9,10 @@
   &__left {
     width: 50%;
     height: 465px;
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &__bg {
@@ -22,6 +26,10 @@
     padding: 90px 0 50px 80px;
     width: 50%;
     background: rgba(249, 250, 247, 0.6);
+
+    @include tablets {
+      width: 100%;
+    }
   }
 
   &__title {

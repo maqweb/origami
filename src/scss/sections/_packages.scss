@@ -15,6 +15,10 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
+
+    @include tablets {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -24,6 +28,11 @@
     padding: 40px 20px 36px;
     display: flex;
     flex-direction: column;
+
+    @include tablets {
+      width: 90%;
+      margin: 0 auto 60px;
+    }
   }
   
   &__content {
@@ -48,6 +57,10 @@
   &__button {
     // flex: 0 0 auto;
     text-align: center;
+    
+    //  @include tablets {
+    //   display: none;
+    // }
   }
 
   &__mark {

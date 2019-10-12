@@ -23,6 +23,10 @@
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 90px;
+
+    @include tablets {
+      margin-bottom: 50px;
+    }
   }
   
   &__title {
