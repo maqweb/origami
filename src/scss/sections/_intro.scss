@@ -102,6 +102,12 @@
       display: none !important;
     }
   }
+
+  .slick-dots {
+    @include tablets {
+      bottom: -17%;
+    }
+  }
 }
 
 .slider__item {

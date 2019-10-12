@@ -5,6 +5,10 @@
 .portfolio {
   padding: 99px 0;
 
+  @include tablets {
+    padding: 50px 0;
+  }
+
   .container {
     @include tablets {
       padding: 0;

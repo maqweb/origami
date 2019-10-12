@@ -2,41 +2,27 @@ $(document).ready(function () {
   
   $('#slider').slick({
     dots: true,
-    // autoplay: true,
-    // arrows: true,
+    autoplay: true,
     nextArrow: '<img src="img/vector-2.svg" alt="">',
     prevArrow: '<img src="img/vector.svg" alt="">',
   });
 
   $('#reviews__wrap').slick({
     dots: true,
-    // autoplay: true,
-    // arrows: true,
+    autoplay: true,
     nextArrow: '<img src="img/vector-2.svg" alt="">',
     prevArrow: '<img src="img/vector.svg" alt="">',
   });
 
   $('.gallery').each(function () {
     $(this).magnificPopup({
-      delegate: 'a', // the selector for gallery item
+      delegate: 'a', 
       type: 'image',
       gallery: {
         enabled: true
-      },
-      // closeMarkup: '<button title="%title%" class="mfp-arrow" style="position: absolute; top: 30px; right: -55px"><img src="img/x-white.svg" width="25" height="29"/></button>',
+      }
     })
   })
-
-  // $('.popup-link').magnificPopup({
-  //   callbacks: {
-  //     open: function () {
-  //       $('.popup-slide').slick({
-  //         infinite: true
-  //       });
-  //     }
-  //   }
-  // });
-
 
   $('.call').click(function () {
     $('#modal_box, #black_fill').show();

@@ -5,6 +5,10 @@
 .about {
   padding: 94px 0 85px;
 
+  @include tablets {
+    padding: 50px 0 30px;
+  }
+
   &__descr {
     width: 61%;
     margin: 35px auto 0;
@@ -15,4 +19,5 @@
       width: 90%;
     }
   }
+
 }

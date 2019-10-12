@@ -5,18 +5,31 @@
 .reviews {
   padding: 90px 0;
 
+  @include tablets {
+    padding: 50px 0;
+  }
+
   .container {
     position: relative;
   }
 
   .section__title {
     margin-bottom: 50px;
+
+    @include tablets {
+      margin-bottom: 35px;
+    }
   }
 
   &__item {
     height: 360px;
     text-align: center;
     margin: 0 auto;
+
+    @include tablets {
+      height: auto;
+      padding-bottom: 60px;
+    }
   }
   
   &__pic {
@@ -31,18 +44,17 @@
   
   &__text {
     text-align: center;
-    width: 53%;
+    width: 54%;
     margin: 0 auto;
     line-height: 160%;
     margin-bottom: 26px;
+
+    @include tablets {
+      width: 60%;
+      text-align: left;
+    }
   }
 }
-
-// .wrapper {
-//   width: 700px;
-//   overflow: hidden;
-//   margin: 0 auto;
-// }
 
 #reviews__wrap {
   width: 100%;
@@ -52,7 +64,7 @@
   position: relative;
   
   .slick-dots {
-    bottom: 0;
+    bottom: -7px;
   }
 
   .slick-arrow {
@@ -64,6 +76,10 @@
     &:first-child {
       left: 0;
     }
+  }
+
+  @include tablets {
+    height: auto;
   }
 }
 
