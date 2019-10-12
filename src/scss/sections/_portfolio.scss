@@ -20,12 +20,6 @@
     width: 48%;
     overflow: hidden;
     margin-bottom: 40px;
-  }
-
-  &__link {
-    display: block;
-    text-decoration: none;
-    color: $text;
 
     &:hover {
       .portfolio__pic {
