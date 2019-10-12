@@ -54,6 +54,13 @@
       text-align: left;
     }
   }
+
+  &__link {
+    @include tablets {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
 }
 
 #reviews__wrap {

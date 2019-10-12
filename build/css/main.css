@@ -1391,6 +1391,10 @@ body {
       .reviews__text {
         width: 60%;
         text-align: left; } }
+  @media screen and (max-width: 768px) {
+    .reviews__link {
+      width: 60%;
+      margin: 0 auto; } }
 
 #reviews__wrap {
   width: 100%;
