@@ -1,4 +1,21 @@
 $(document).ready(function () {
+
+  $('.burger').click(function(){
+    $('.nav').addClass('show-pannel').addClass('shadow');
+    $('.burger').hide();
+    $('.closeMark').show();
+    $('.logo__link').show();
+    $('.phone').addClass('show-pannel');
+    $('.soc__list-mob').addClass('show-pannel');
+  });
+
+  $('.closeMark').click(function(){
+    $('.nav').removeClass('show-pannel').removeClass('shadow');
+    $('.closeMark').hide();
+    $('.burger').show();
+    $('.phone').removeClass('show-pannel');
+    $('.soc__list-mob').removeClass('show-pannel');
+  })
   
   $('#slider').slick({
     dots: true,

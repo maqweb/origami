@@ -11,15 +11,31 @@
     flex-wrap: wrap;
   }
 
-   @include tablets {
-      margin-bottom: 30px;
-    }
+  @include tablets {
+    margin-bottom: 30px;
+  }
 }
 
 .nav {
+  display: block;
   &__list {
     display: flex;
     list-style-type: none;
+
+    @include tablets {
+      flex-direction: column;
+      position: absolute;
+      background: #fff;
+      z-index: 20;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: 0;
+      align-items: center;
+      padding: 150px 0 0;
+      overflow: hidden;
+    }
   }
 
   &__item {
@@ -31,7 +47,7 @@
     }
 
     &:before {
-      content: '';
+      content: "";
       display: block;
       background: $text;
       height: 1px;
@@ -49,7 +65,8 @@
     }
 
     @include tablets {
-      display: none;
+      margin: 0 0 35px 0;
+      font-size: 18px;
     }
   }
 
@@ -57,13 +74,79 @@
     text-decoration: none;
     color: $text;
   }
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .phone {
   text-decoration: none;
   color: $text;
+  z-index: 41;
 
-   @include tablets {
-      display: none;
-    }
+  @include tablets {
+    display: none;
+    position: absolute;
+    bottom: 20%;
+    font-size: 22px;
+    left: calc(50% - 75px);
+  }
+}
+
+.burger {
+  display: none;
+
+  @include tablets {
+    display: block;
+  }
+}
+
+.closeMark {
+  z-index: 30;
+  display: none;
+}
+
+.logo__link {
+  z-index: 40;
+}
+
+.shadow {
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.4);
+  z-index: 30;
+}
+
+.close-pannel {
+  display: none;
+}
+
+.soc__list-mob {
+  display: none;
+  z-index: -10;
+  list-style-type: none;
+  
+  @include tablets {
+    // display: flex;
+    z-index: 45;
+    position: absolute;
+    bottom: 11%;
+    left: calc(50% - 45px);
+  }
+}
+
+.soc__link-mob {
+  display: inline-block;
+  margin-right: 25px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  img {
+    width: 43px;
+  }
+}
+
+.show-pannel {
+  display: block;
 }
