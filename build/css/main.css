@@ -770,7 +770,7 @@ button::-moz-focus-inner {
   content: '';
   display: block;
   width: 30px;
-  background: url(../../../img/vector-white-left.svg) no-repeat center center; }
+  background: url(../../img/vector-white-left.svg) no-repeat center center; }
 
 .mfp-arrow-left:before {
   margin-left: 25px; }
@@ -783,7 +783,7 @@ button::-moz-focus-inner {
   content: '';
   display: block;
   width: 30px;
-  background: url(../../../img/vector-white-right.svg) no-repeat center center; }
+  background: url(../../img/vector-white-right.svg) no-repeat center center; }
 
 .mfp-iframe-holder {
   padding-top: 40px;
