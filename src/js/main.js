@@ -55,10 +55,12 @@ $(document).ready(function () {
 
   $('.calc-call').click(function(){
     $('.calculator').show();
+    $('body').css('overflow', 'hidden');
   })
 
   $('.close-button').click(function () {
     $('.calculator').hide();
+    $('body').css('overflow', 'visible');
   })
 
   $('.call').click(function () {
