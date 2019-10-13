@@ -1,22 +1,5 @@
 $(document).ready(function () {
 
-  $('.burger').click(function(){
-    $('.nav').addClass('show-pannel').addClass('shadow');
-    $('.burger').hide();
-    $('.closeMark').show();
-    $('.logo__link').show();
-    $('.phone').addClass('show-pannel');
-    $('.soc__list-mob').addClass('show-pannel');
-  });
-
-  $('.closeMark').click(function(){
-    $('.nav').removeClass('show-pannel').removeClass('shadow');
-    $('.closeMark').hide();
-    $('.burger').show();
-    $('.phone').removeClass('show-pannel');
-    $('.soc__list-mob').removeClass('show-pannel');
-  })
-  
   $('#slider').slick({
     dots: true,
     autoplay: true,
@@ -33,12 +16,49 @@ $(document).ready(function () {
 
   $('.gallery').each(function () {
     $(this).magnificPopup({
-      delegate: 'a', 
+      delegate: 'a',
       type: 'image',
       gallery: {
         enabled: true
       }
     })
+  })
+
+  $('.burger').click(function(){
+    $('.nav').addClass('show-pannel');
+    $('.burger').hide();
+    $('.closeMark').show();
+    $('.logo__link').show();
+    $('.phone').addClass('show-pannel');
+    $('.soc__list-mob').addClass('show-pannel');
+    $('body').css('overflow', 'hidden');
+  });
+
+  $('.closeMark').click(function(){
+    $('.nav').removeClass('show-pannel');
+    $('.closeMark').hide();
+    $('.burger').show();
+    $('.phone').removeClass('show-pannel');
+    $('.soc__list-mob').removeClass('show-pannel');
+    $('body').css('overflow', 'visible');
+  })
+
+  $('.politic__link').click(function(){
+    $('.politic__page').show()
+    $('body').css('overflow', 'hidden');
+  })
+
+  $('.close-button').click(function() {
+    $('.politic__page').hide()
+    $('body').css('overflow', 'visible');
+  })
+
+  $('.calc-call').click(function(){
+    $('.calculator').show();
+  })
+
+  $('.close-button').click(function () {
+    $('.calculator').hide();
   })
 
   $('.call').click(function () {

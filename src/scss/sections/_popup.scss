@@ -11,6 +11,7 @@
   z-index: 50;
   background-color: rgba(0, 0, 0, 0.8);
   display: none;
+  cursor: pointer;
 }
 
 #modal_box {
@@ -84,6 +85,8 @@
 
   &__link {
     color: #828282;
+    cursor: pointer;
+    text-decoration: underline;
   }
 }
 

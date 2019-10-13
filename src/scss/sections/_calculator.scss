@@ -1,0 +1,21 @@
+.calculator {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #fff;
+  z-index: 60;
+  overflow: auto;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+
+  .close-button {
+    z-index: 9999;
+  }
+
+  .uCalc_209613 {
+    overflow: auto;
+  }
+}
