@@ -49,8 +49,9 @@
     &:before {
       content: "";
       display: block;
-      background: $text;
-      height: 1px;
+      background: #4f4f4f;
+      opacity: .8;
+      height: 2px;
       position: absolute;
       bottom: -5px;
       left: 0;

@@ -87,7 +87,7 @@ $(document).ready(function () {
       },
       success: function(responce) {
         setTimeout(function(){
-          button.attr('disabled', false);
+          button.attr('disabled', true);
           $('.after-posts').before(responce);
         },500);
       },

@@ -1,7 +1,16 @@
 @font-face {
  font-family: "Palatino";
- src: url("fonts/Palatino.ttf") format("ttf"),
-      url("fonts/Palatino.otf") format("otf"),
-      url("fonts/Palatino.svg") format("svg"),
-      url("fonts/Palatino.wof") format("wof"),
+ src: url("/fonts/Palatino.ttf") format("ttf"),
+      url("/fonts/Palatino.otf") format("otf"),
+      url("/fonts/Palatino.svg") format("svg"),
+      url("/fonts/Palatino.wof") format("wof");
+      font-weight: normal;
+}
+
+@font-face {
+ font-family: "CenturyGothic";
+ src: url("/fonts/CenturyGothic.ttf") format("ttf"),
+      url("/fonts/CenturyGothic.eot") format("eot"),
+      url("/fonts/CenturyGothic.woff") format("woff");
+      font-weight: normal;
 }

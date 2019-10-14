@@ -45,8 +45,13 @@
 
   &__wrap-pic {
     overflow: hidden;
-    height: 330px;
+    // height: 330px;
     margin-bottom: 15px;
+
+    @include tablets {
+      height: auto;
+      width: 100%;
+    }
   }
 
   &__pic {
@@ -54,6 +59,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     transition: all .3s;
+
+    @include tablets {
+      height: auto;
+      width: 100%;
+    }
   }
 
   &__name {

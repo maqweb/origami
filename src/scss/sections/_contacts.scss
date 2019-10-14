@@ -29,12 +29,14 @@
 
     @include tablets {
       width: 100%;
+      padding: 90px 0 50px 40px;
     }
   }
 
   &__title {
     font-size: 22px;
     margin-bottom: 40px;
+    font-weight: 600;
   }
 
   &__list {

@@ -37,6 +37,7 @@
 
     @include tablets {
       margin-top: 20px;
+      text-align: center;
     }
   }
 
@@ -61,11 +62,19 @@
   font-size: 42px;
   font-weight: 300;
   margin: 0 0 10px 0;
+
+  @include tablets {
+    font-size: 32px;
+  }
 }
 
 .descr-title {
   font-size: 22px;
   margin-bottom: 35px;
+
+  @include tablets {
+    font-size: 18px;
+  }
 }
 
 .cost-text {
@@ -76,6 +85,7 @@
 
   @include tablets {
     margin-bottom: 26px;
+    font-size: 18px;
   }
 }
 
@@ -116,4 +126,20 @@
 
 .slider__item {
   width: 100%;
+}
+
+.hidden-desctop {
+  display: none;
+
+  @include tablets {
+    display: block;
+  }
+}
+
+.show-desctop {
+  display: block;
+
+  @include tablets {
+    display: none;
+  }
 }
