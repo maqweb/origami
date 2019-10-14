@@ -24,43 +24,49 @@ $(document).ready(function () {
     })
   })
 
-  $('.burger').click(function(){
+  $('.burger').click(function () {
     $('.nav').addClass('show-pannel');
     $('.burger').hide();
     $('.closeMark').show();
     $('.logo__link').show();
     $('.phone').addClass('show-pannel');
     $('.soc__list-mob').addClass('show-pannel');
-    $('body').css('overflow', 'hidden');
+    $('.main_wrapper').css('overflow', 'hidden');
   });
 
-  $('.closeMark').click(function(){
+  $('.closeMark').click(function () {
     $('.nav').removeClass('show-pannel');
     $('.closeMark').hide();
     $('.burger').show();
     $('.phone').removeClass('show-pannel');
     $('.soc__list-mob').removeClass('show-pannel');
-    $('body').css('overflow', 'visible');
+    $('.main_wrapper').css('overflow', 'visible');
   })
 
-  $('.politic__link').click(function(){
+  $('.politic__link').click(function () {
     $('.politic__page').show()
-    $('body').css('overflow', 'hidden');
-  })
-
-  $('.close-button').click(function() {
-    $('.politic__page').hide()
-    $('body').css('overflow', 'visible');
-  })
-
-  $('.calc-call').click(function(){
-    $('.calculator').show();
-    $('body').css('overflow', 'hidden');
+    $('.main_wrapper').css('overflow', 'hidden');
   })
 
   $('.close-button').click(function () {
+    $('.politic__page').hide()
+    $('.main_wrapper').css('overflow', 'visible');
+  })
+
+  $('.calc-call').click(function () {
+    $('.calculator').show();
+    $('#black_fill').show();
+    $('.main_wrapper').css('overflow', 'hidden');
+
+    if (window.innerWidth < 768) {
+      $('.main_wrapper').css('overflow', 'visible');
+    }
+  })
+
+  $('.close-button, #black_fill').click(function () {
     $('.calculator').hide();
-    $('body').css('overflow', 'visible');
+    $('#black_fill').hide();
+    $('.main_wrapper').css('overflow', 'visible');
   })
 
   $('.call').click(function () {
@@ -72,3 +78,5 @@ $(document).ready(function () {
   })
 
 });
+
+// change main wrapper on body

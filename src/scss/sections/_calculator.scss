@@ -18,4 +18,8 @@
     top: 5%;
   }
 
+  @include tablets {
+    height: auto;
+  }
+
 }

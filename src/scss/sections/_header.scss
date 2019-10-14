@@ -33,7 +33,7 @@
       right: 0;
       margin: 0;
       align-items: center;
-      padding: 150px 0 0;
+      padding: 120px 0 0;
       overflow: hidden;
     }
   }
@@ -67,6 +67,7 @@
     @include tablets {
       margin: 0 0 35px 0;
       font-size: 18px;
+      overflow: hidden;
     }
   }
 
@@ -88,7 +89,7 @@
   @include tablets {
     display: none;
     position: absolute;
-    bottom: 20%;
+    bottom: 25%;
     font-size: 22px;
     left: calc(50% - 75px);
   }
@@ -129,7 +130,7 @@
     // display: flex;
     z-index: 45;
     position: absolute;
-    bottom: 8%;
+    bottom: 15%;
     left: calc(50% - 59px);
   }
 }
