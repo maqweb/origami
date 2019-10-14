@@ -77,6 +77,24 @@ $(document).ready(function () {
     $('#modal_box, #black_fill').hide();
   })
 
-});
+  $('.load-more').click(function() {
+    var button = $(this);
+    $.ajax({
+      url: '/data.html',
+      type: 'GET',
+      beforeSend: function() {
+        button.attr('disabled', true);
+      },
+      success: function(responce) {
+        setTimeout(function(){
+          button.attr('disabled', false);
+          $('.after-posts').before(responce);
+        },500);
+      },
+      error: function(){
+        alert('Error!');
+      }
+    })
+  })
 
-// change main wrapper on body
+});

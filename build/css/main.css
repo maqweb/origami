@@ -1348,6 +1348,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.after-posts {
+  display: none; }
+
 /*
 * packages style
 */
