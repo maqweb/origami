@@ -959,6 +959,7 @@ body {
   margin: 0; }
 
 .btn {
+  color: #4f4f4f;
   font-size: 14px;
   text-transform: uppercase;
   width: 190px;
@@ -1058,6 +1059,7 @@ body {
       display: none; } }
 
 .phone {
+  font-size: 18px;
   text-decoration: none;
   color: #4f4f4f;
   z-index: 41; }
