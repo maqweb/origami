@@ -1,16 +1,18 @@
 @font-face {
  font-family: "Palatino";
- src: url("/fonts/Palatino.ttf") format("ttf"),
-      url("/fonts/Palatino.otf") format("otf"),
-      url("/fonts/Palatino.svg") format("svg"),
-      url("/fonts/Palatino.wof") format("wof");
+ src: url("../fonts/palatino/Palatino.eot"),
+      url("../fonts/palatino/Palatino.ttf") format("truetype"),
+      url("../fonts/palatino/Palatino.otf") format("otf"),
+      url("../fonts/palatino/Palatino.svg") format("svg"),
+      url("../fonts/palatino/Palatino.woff") format("woff");
       font-weight: normal;
 }
 
 @font-face {
  font-family: "CenturyGothic";
- src: url("/fonts/CenturyGothic.ttf") format("ttf"),
-      url("/fonts/CenturyGothic.eot") format("eot"),
-      url("/fonts/CenturyGothic.woff") format("woff");
+ src: url("../fonts/gothic/CenturyGothic.eot"),
+      url("../fonts/gothic/CenturyGothic.ttf") format("truetype"),
+      url("../fonts/gothic/centuryGothic.svg") format("svg"),
+      url("../fonts/gothic/CenturyGothic.woff") format("woff");
       font-weight: normal;
 }

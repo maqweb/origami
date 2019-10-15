@@ -310,12 +310,12 @@ template {
 
 @font-face {
   font-family: "Palatino";
-  src: url("/fonts/Palatino.ttf") format("ttf"), url("/fonts/Palatino.otf") format("otf"), url("/fonts/Palatino.svg") format("svg"), url("/fonts/Palatino.wof") format("wof");
+  src: url("../fonts/palatino/Palatino.eot"), url("../fonts/palatino/Palatino.ttf") format("truetype"), url("../fonts/palatino/Palatino.otf") format("otf"), url("../fonts/palatino/Palatino.svg") format("svg"), url("../fonts/palatino/Palatino.woff") format("woff");
   font-weight: normal; }
 
 @font-face {
   font-family: "CenturyGothic";
-  src: url("/fonts/CenturyGothic.ttf") format("ttf"), url("/fonts/CenturyGothic.eot") format("eot"), url("/fonts/CenturyGothic.woff") format("woff");
+  src: url("../fonts/gothic/CenturyGothic.eot"), url("../fonts/gothic/CenturyGothic.ttf") format("truetype"), url("../fonts/gothic/centuryGothic.svg") format("svg"), url("../fonts/gothic/CenturyGothic.woff") format("woff");
   font-weight: normal; }
 
 /* Slider */
@@ -969,7 +969,8 @@ body {
   cursor: pointer;
   border: none;
   -webkit-transition: all .1s;
-  transition: all .1s; }
+  transition: all .1s;
+  font-weight: 600; }
   .btn:active {
     color: #4f4f4f; }
   .btn:hover {
@@ -999,7 +1000,8 @@ body {
       margin-bottom: 30px; } }
 
 .nav {
-  display: block; }
+  display: block;
+  font-size: 18px; }
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1359,6 +1361,7 @@ body {
         width: 100%; } }
   .portfolio__wrap-pic {
     overflow: hidden;
+    height: 330px;
     margin-bottom: 15px; }
     @media screen and (max-width: 768px) {
       .portfolio__wrap-pic {
@@ -1366,6 +1369,7 @@ body {
         width: 100%; } }
   .portfolio__pic {
     height: 330px;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-transition: all .3s;
@@ -1587,7 +1591,8 @@ body {
     color: #4f4f4f; }
   .contacts__soctitle {
     font-size: 22px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-weight: 600; }
 
 .soc__list {
   padding: 0;
