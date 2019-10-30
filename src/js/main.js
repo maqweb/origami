@@ -34,14 +34,18 @@ $(document).ready(function () {
     $('.main_wrapper').css('overflow', 'hidden');
   });
 
-  $('.closeMark').click(function () {
+  $('.closeMark, .nav__link').click(function () {
     $('.nav').removeClass('show-pannel');
     $('.closeMark').hide();
     $('.burger').show();
     $('.phone').removeClass('show-pannel');
     $('.soc__list-mob').removeClass('show-pannel');
     $('.main_wrapper').css('overflow', 'visible');
-  })
+    if (innerWidth > 768) {
+      $('.burger').hide();
+    }
+  });
+
 
   $('.politic__link').click(function () {
     $('.politic__page').show()
